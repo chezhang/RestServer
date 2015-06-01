@@ -31,7 +31,7 @@ namespace Microsoft.Hpc.Scheduler.PipeProxy
         {
             [HttpPost]
             [Route("api/message")]
-            public void Post([FromBody] ClusrunOutputFromLinuxCN restmessage)
+            public void Post([FromBody] ClusrunOutputFromLinux restmessage)
             {
                 RestMessageRepository.Instance.Put(restmessage);
             }
